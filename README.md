@@ -20,3 +20,4 @@ The process for adding new items to this registry is to open a pull request. Reg
 | `import.meta.dir`     | Absolute path to the directory containing the current file, e.g. /path/to/project. Equivalent to __dirname in CommonJS modules (and Node.js) | https://bun.sh/docs/api/import-meta |
 | `import.meta.file`    | The name of the current file, e.g. index.tsx | https://bun.sh/docs/api/import-meta |
 | `import.meta.path`    | Absolute path to the current file, e.g. /path/to/project/index.tx. Equivalent to __filename in CommonJS modules (and Node.js) | https://bun.sh/docs/api/import-meta |
+| `import.meta.env`    | Environmental configuration as a dictionary object. Warning: Exact semantics currently vary between implementations. | https://bun.sh/docs/api/import-meta, https://vitejs.dev/guide/env-and-mode |
