@@ -1,0 +1,20 @@
+{
+  "name": "import-meta-registry-tests",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#test": {
+      "bun": "./test_runners/bun.js",
+      "node": "./test_runners/node.js"
+    }
+  },
+  "scripts": {
+    "test": "node --test **/*.spec.js",
+    "test:report": "node --test **/*.spec.js | tap-parser --json --flat | node test_runners/write_summary.js > report.md"
+  },
+  "devDependencies": {
+    "expect": "^29.7.0",
+    "tap-parser": "^18.0.0"
+  }
+}
